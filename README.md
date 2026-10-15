@@ -6,7 +6,7 @@
 
 This project uses Python to model how air behaves when passing through a normal shock wave at supersonic and hypersonic speeds.
 
-The calculator determines changes in pressure, temperature, density, velocity, and Mach number across a shock wave. It also generates graphs to visualize these changes over a range of Mach numbers.
+The calculator determines changes in pressure, temperature, density, velocity, and Mach number across a shock wave. It also generates graphs to visualize these changes over a range of Mach numbers. Users can enter their own Mach number, pressure, and temperature to calculate airflow properties before and after a normal shock wave.
 
 The project was developed independently to apply physics, mathematics, and programming skills to an aerospace-related problem.
 
@@ -37,7 +37,7 @@ The calculations use the following assumptions:
 - Flow is steady and one-dimensional.
 - The model does not account for real-gas effects, chemical reactions, or detailed aircraft geometry.
 
-Calculations use an upstream pressure of 101325 Pa and temperature of 288.15 K, corresponding approximately to standard sea-level atmospheric conditions.
+The example calculations use an upstream pressure of 101325 Pa and temperature of 288.15 K, approximately corresponding to standard sea-level atmospheric conditions. Users can specify different upstream conditions when running the calculator.
 
 At very high temperatures, particularly under hypersonic conditions, the constant-specific-heat assumption becomes less accurate.
 
@@ -93,7 +93,7 @@ The project generates six graphs showing:
 
 The calculator was tested at multiple Mach numbers against reference values calculated using the normal shock equations published by NASA Glenn Research Center.
 
-The validation script, `validate.py`, compares calculated pressure, temperature, density, and downstream Mach ratios against these reference values.
+The validation script, `validate.py`, compares calculated pressure, temperature, density, and downstream Mach ratios against these reference values. All tested Mach numbers passed validation within the specified numerical tolerance.
 
 [Reference: NASA Glenn Research Center — Normal Shock Wave Equations](https://www.grc.nasa.gov/WWW/BGH/normal.html)
 
